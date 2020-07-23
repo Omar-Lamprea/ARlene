@@ -1,0 +1,54 @@
+
+header{
+  background: #1F3D92;
+}
+.logoAR{
+  padding: 1em;
+  margin: 0;
+}
+
+.container{
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.container-dropdown, .container-inputs{
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  /* max-width: 750px; */
+  margin:80px 20px;
+  padding: 5px;
+}
+
+.form-control {
+  margin-bottom: .5em;
+  height:auto;
+}
+.prueba-group{
+  display: flex;
+}
+.load-button{
+  border: none;
+  border-radius: 5px;
+  background-color: #1F3D92;
+  color: white;
+  padding: 5px 20px;
+}
+.load-button:hover{
+  cursor: pointer;
+  background-color: #0c215c;
+}
+
+.preloader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preloader figure{
+  margin: 0 .5em;
+  padding: 0;
+}
+.load{
+  display: none;
+}
