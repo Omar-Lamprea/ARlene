@@ -3,7 +3,7 @@ header{
   background: #1F3D92;
 }
 .logoAR{
-  padding: 1em;
+  padding: 0.6em;
   margin: 0;
 }
 
@@ -15,8 +15,6 @@ header{
 .container-dropdown, .container-inputs{
   border: 1px solid #dedede;
   border-radius: 5px;
-  /* max-width: 750px; */
-  margin:80px 20px;
   padding: 5px;
 }
 
