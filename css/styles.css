@@ -22,9 +22,11 @@ header{
   margin-bottom: .5em;
   height:auto;
 }
-.prueba-group{
-  display: flex;
+
+.custom-select, .input-title {
+  text-transform: capitalize;
 }
+
 .load-button{
   border: none;
   border-radius: 5px;
