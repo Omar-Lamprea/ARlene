@@ -22,8 +22,8 @@
 
     <section class="container-dropdown py-4 px-5 mt-5 mb-4">
       <h5 class="mb-3">Select a template</h5>
-      <select class="custom-select custom-select-lg mb-3">
-        <option selected value="faceMask">Face Mask</option>
+      <select class="custom-select custom-select-lg mb-3" id="select-templates">
+        
       </select>
 
     </section>
@@ -31,7 +31,7 @@
     <section class="container-inputs py-4 px-5 mb-5">
 
 
-      <form action="index.html" method="post">
+      <form id="form-files" action="/" method="post">
 
         <h5 class="mb-3">Project Settings </h5>
         <div class="form-group row text-left">
@@ -42,54 +42,25 @@
           </div>
 
           <div class="col-sm-12">
-            <div class="row">
-              <div class="col-md col-sm-12">
-                <label class="col-form-label">Logo</label>
-                <div class="mb-4">
-                  <div class="custom-file">
-                    <input type="file"  class="custom-file-input" id="inputLogo" onchange="loadImage('logoPreview', event)">
-                    <label class="custom-file-label" for="inputLogo">Choose file</label>
-                  </div>
-                  <img class="mt-3 img-fluid img-thumbnail" id="logoPreview" style="display: none" />
-                </div>
-              </div>
 
-              <div class="col-md col-sm-12">
-                <label class="col-form-label">Face Mask</label>
-                <div class="mb-4">
-                  <div class="custom-file">
-                    <input type="file"  class="custom-file-input" id="inputFaceMask" onchange="loadImage('faceMaskPreview', event)">
-                    <label class="custom-file-label" for="inputFaceMask">Choose file</label>
-                  </div>
-                  <img class="mt-3 img-fluid img-thumbnail" id="faceMaskPreview" style="display: none" />
-                </div>
-              </div>
-
-              <div class="col-md col-sm-12">
-                <label class="col-form-label">Background</label>
-                <div class="mb-4">
-                  <div class="custom-file">
-                    <input type="file"  class="custom-file-input" id="inputBackground" onchange="loadImage('backgroundPreview', event)">
-                    <label class="custom-file-label" for="inputBackground">Choose file</label>
-                  </div>
-                  <img class="mt-3 img-fluid img-thumbnail" id="backgroundPreview" style="display: none" />
-                </div>
-              </div>
+            <div id="input-files" class="row">
+              <!-- here we will have all input files :D -->
             </div>
+            
           </div>
+        </div> <!-- end form-group -->
 
-
+        <div class="preloader">
+          <button type="submit" name="button" class="load-button" id="loadButton">Generate Package</button>
+          <i class="load" id="preloader">
+            <img src="images/preloader.svg" width="60px" alt="preloader">
+          </i>
+          <div id="result" class="mt-4"></div>
         </div>
+
       </form>
     </section>
 
-    <section class="preloader">
-      <button type="button" name="button" class="load-button" id="loadButton">Generate Package</button>
-      <i class="load" id="preloader">
-        <img src="images/preloader.svg" width="60px" alt="preloader">
-      </i>
-      <div id="result" class="mt-4"></div>
-    </section>
 
 
   </div>
